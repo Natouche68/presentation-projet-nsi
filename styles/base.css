@@ -1,11 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 @import url("home.css");
-@import url("fonctionnement.css");
-@import url("applications.css");
-@import url("sources.css");
 
 :root {
-	font-size: 1.5rem;
 	--background: #dbe9ee;
 	--surface: #acccd8;
 	--foreground: #0c1821;
@@ -30,6 +26,13 @@ h1 {
 	color: var(--primary);
 	font-size: 2.5rem;
 	text-align: center;
+}
+
+h2 {
+	font-weight: 700;
+	color: var(--primary);
+	font-size: 1.8rem;
+	text-align: left;
 }
 
 .menu {
@@ -82,18 +85,6 @@ h1 {
 	flex-grow: 1;
 }
 
-@keyframes pulse {
-	0%,
-	100% {
-		opacity: 0;
-	}
-
-	10%,
-	90% {
-		opacity: 1;
-	}
-}
-
 .row {
 	display: flex;
 	flex-direction: row;
@@ -104,7 +95,7 @@ h1 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 85vh;
+	height: 70vh;
 	width: 100%;
 }
 
